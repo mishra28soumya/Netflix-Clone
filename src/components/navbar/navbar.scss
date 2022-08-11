@@ -1,0 +1,66 @@
+.navbar {
+    // background-color: #0b0b0b;
+    color:white;
+    font-size: 14px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index:999;
+    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.3) 50%);
+
+    .container {
+        padding: 0px 50px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        .left{
+            display: flex;
+            align-items: center;
+            img{
+                height: 25px;
+                margin-right: 40px;
+            }
+            span{
+                margin-right: 20px;
+                cursor: pointer;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            .icon {
+                margin:0px 15px;
+                cursor: pointer;
+
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                object-fit: cover; //aspect ratio is maintained on window resizing
+                cursor: pointer;
+            }
+
+            .profile{
+                .options{
+                    display: none;
+                    background-color: #0b0b0b;
+                    border-radius: 5px;
+                }
+                span{
+                    padding:10px;
+                    cursor:pointer
+                }
+                &:hover{
+                    .options{
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+
+}
